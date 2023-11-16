@@ -1,0 +1,41 @@
+@font-face {
+    font-family: rubik-2;
+    src: url(Rubik-Light.ttf);
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: rubik-2;
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.pot {
+    position: absolute;
+    font-size: 40px;
+    bottom: 400px;
+}
+.abs {
+    font-size: 250px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 20px;
+    text-transform: lowercase;
+}
+.bg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    filter: brightness(30%);
+    z-index: -1;
+}
