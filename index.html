@@ -15,24 +15,37 @@
 
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-family: rubik-2;
-    color: white;
+    color: black;
     overflow: hidden;
-    height: 100vh;
-    pointer-events: none;
+    height: 100vh;  
+    
+}
+body:hover {
+    color: white;
 }
 
-.pot {
-    position: absolute;
-    font-size: 40px;
-    bottom: 400px;
+.pot {   
+    font-size: 35px;
     letter-spacing: 4px;
     z-index: 1;
+    transition: ease-in-out .6s;
     pointer-events: none;
+    padding: 0;
+    margin: 0;
+}
+.pot2 {
+    font-size: 35px;
+    letter-spacing: 4px;
+    z-index: 1;
+    transition: ease-in-out 1.5s;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
 }
 .abs {
     font-size: 250px;
@@ -41,6 +54,7 @@ body {
     letter-spacing: 20px;
     text-transform: lowercase;
     z-index: 1;
+    transition: ease-in-out 1s;
     pointer-events: none;
 }
 .bg {
@@ -51,13 +65,18 @@ body {
     top: 0;
     width: 100%;
     height: auto;
-    filter: brightness(30%);
+    filter: brightness(60%);
     pointer-events: none;
+    transition: ease-in-out .6s;
+}
+body:hover .bg {
+    filter: brightness(25%);
 }
 </style>
 <body>
     <p class="pot">Потому что я</p>
     <p class="abs">абсолют</p>
+    <p class="pot2">и вижу всё</p>
     <img class="bg" src="akashi.jpg" alt="bg">
 </body>
 </html>
