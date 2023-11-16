@@ -14,12 +14,16 @@ body {
     color: white;
     overflow: hidden;
     height: 100vh;
+    pointer-events: none;
 }
 
 .pot {
     position: absolute;
     font-size: 40px;
     bottom: 400px;
+    letter-spacing: 4px;
+    z-index: 1;
+    pointer-events: none;
 }
 .abs {
     font-size: 250px;
@@ -27,6 +31,8 @@ body {
     padding: 0;
     letter-spacing: 20px;
     text-transform: lowercase;
+    z-index: 1;
+    pointer-events: none;
 }
 .bg {
     position: absolute;
@@ -37,5 +43,5 @@ body {
     width: 100%;
     height: auto;
     filter: brightness(30%);
-    z-index: -1;
+    pointer-events: none;
 }
